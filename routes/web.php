@@ -24,5 +24,4 @@ Route::get('downloadExcel/{type}', 'MaatwebsiteDemoController@downloadExcel');
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles','RoleController');
     Route::resource('users','UserController');
-    Route::resource('products','ProductController');
 });
